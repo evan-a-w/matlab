@@ -1,0 +1,6 @@
+function [dist, M] = min_dist(point, s_point, dir_vec)
+% Returns the distance and the closest point 
+QP = sym(point - s_point);
+QM = proj(QP, dir_vec);
+end
+
